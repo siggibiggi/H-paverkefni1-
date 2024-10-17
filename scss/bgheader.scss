@@ -1,0 +1,134 @@
+$primary-color: #f09a70;
+$background-color: #fff7f0;
+$text-color: #333;
+$secondary-text-color: #666;
+$font-family: Arial, sans-serif;
+
+@mixin container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f9f9f9;
+    font-family: $font-family;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: $background-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .container {
+        @include container;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+
+        .content {
+            max-width: 600px;
+
+            h4 {
+                color: $primary-color;
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+
+            h1 {
+                font-size: 48px;
+                margin-bottom: 20px;
+                color: $text-color;
+            }
+
+            p {
+                font-size: 18px;
+                color: $secondary-text-color;
+                margin-bottom: 30px;
+            }
+
+            .see-more {
+                background-color: $primary-color;
+                color: #fff;
+                border: none;
+                padding: 10px 20px;
+                cursor: pointer;
+                font-size: 16px;
+                border-radius: 5px;
+                transition: background-color 0.3s;
+
+                &:hover {
+                    background-color: darken($primary-color, 10%);
+                }
+            }
+        }
+
+        .image {
+            img {
+                width: 100%;
+                border-radius: 8px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            }
+        }
+    }
+
+    .navigation {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+
+            li {
+                a {
+                    text-decoration: none;
+                    color: $text-color;
+                    font-size: 16px;
+                    transition: color 0.3s;
+
+                    &:hover {
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        .container {
+            grid-template-columns: 1fr;
+            text-align: center;
+        }
+
+        .content {
+            h1 {
+                font-size: 36px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+
+        .navigation {
+            top: 10px;
+            right: 10px;
+        }
+    }
+}
