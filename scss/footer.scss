@@ -21,7 +21,7 @@ footer > .black > div > .craving > p {
     color: rgb(243, 204, 131);
 }
 
-footer > .black > div > .craving > h1 {
+footer > .black > div > .craving > h2 {
     color: rgb(255, 255, 255);
 }
 
@@ -31,13 +31,33 @@ footer > .black > div > .email > p {
 
 footer > .black > div > .email > input {
     background-color: black;
-    border: black;
     padding: 10px;
     width: 150px;
+    color: white;
+    border-color: black black rgb(245, 209, 136) black;
+    outline: 0;
 }
 
 footer > .black > div > .email > h3 {
     color:rgb(243, 204, 131);
+}   
+
+footer a {
+    color:rgb(245, 209, 136) ;
+    white-space: nowrap;
+    text-decoration: none;
+    border-color: orange;
+    width:100%;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border:1px solid rgb(243, 204, 131);
+}
+
+footer > .black > div > .subscribe {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 footer > .black > div > .email {
@@ -55,9 +75,6 @@ footer > .white {
 
 footer > .white > div {
     height: 100%;
-    
-    padding-left: 10%;
-    padding-right: 10%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -65,7 +82,7 @@ footer > .white > div {
 
 footer > .white > div > dl {
     text-align: center;
-    width: 25%;
+    width: 50%;
 }
 
 footer > .white > div > dl > dd:nth-child(3) {
@@ -75,7 +92,13 @@ footer > .white > div > dl > dd:nth-child(3) {
 footer > .white > div > dl > dd:nth-child(2) {
     display: flex;
     justify-content: center;
-    gap: 5%;
+    gap: 10px;
+}
+
+footer > .white > div > dl > dd > form > button {
+    border: none;
+    outline: none;
+    background-color: white;
 }
 
 footer > .white > div > dl > dd:nth-child(1) {
@@ -83,9 +106,5 @@ footer > .white > div > dl > dd:nth-child(1) {
 }
 
 footer > .white > div > dl > dd {
-    padding: 5%;
-}
-
-footer > .white > div > dl > dd > .button {
-    
+    padding: 10px;
 }
