@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=
+"width=device-width, initial-scale=1.0">
+    <title>
+        Display Element on Hover
+    </title>
+    <style>
+        h3,
+        .parent-element {
+            text-align: center;
+        }
+
+        .hidden-element {
+            display: none;
+        }
+
+        .parent-element:hover 
+        .hidden-element {
+            color: blue;
+            display: block;
+            margin: auto;
+            height: 50px;
+            width: 200px;
+            border: 1px solid green;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body style="text-align: center;">
+    <h2>
+        Using CSS display property
+    </h2>
+    <h3>
+        Hover the below text to see
+        <br/>hidden content
+    </h3>
+    <div class="parent-element">
+        Hover over me <br/>
+        <div class="hidden-element">
+            I'm visible now!
+        </div>
+    </div>
+</body>
+
+</html>

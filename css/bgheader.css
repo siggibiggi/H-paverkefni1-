@@ -70,9 +70,6 @@ body {
   background-color: #E3CDB1;
   color: #fff;
 }
-.header .image-content {
-  max-width: 100vw;
-}
 .header .hero-section-img {
   display: flex;
   justify-content: center;
