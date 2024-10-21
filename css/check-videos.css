@@ -1,4 +1,5 @@
 .check-video {
+  z-index: 100;
   height: 500px;
   padding-left: 10%;
   padding-right: 10%;

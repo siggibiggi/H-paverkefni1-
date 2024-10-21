@@ -17,126 +17,153 @@ body {
     font-family: $font-family;
 }
 
-.header {
+
+// .header {
+//     position: relative;
+//     width: 100%;
+//     height: 10vh;
+//     background-color: $background-color;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     padding: 20px 0;
+
+
+
+
+//     .navigation {
+//         position: absolute;
+//         top: 30px;
+//         right: 30px;
+
+//         ul {
+//             list-style: none;
+//             display: flex;
+//             gap: 20px;
+
+//             li {
+//                 a {
+//                     text-decoration: none;
+//                     color: $text-color;
+//                     font-size: 16px;
+//                     font-weight: 500;
+//                     transition: color 0.3s;
+
+//                     &:hover {
+//                         color: $primary-color;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+.hero-section {
+    overflow: hidden;
+
+position: relative;
+width: 100%;
+height: 100vh;
+background-color: $background-color;
+display: flex;
+align-items: center;
+justify-content: center;
+
+.container {
+    @include container;
+    display: grid;
+    grid-template-columns: repeat(var(--columns), 1fr); // 12-column grid setup
+    gap: var(--gutter); // Use the same gutter spacing from grid.scss
+    width: calc(100% - 2 * var(--offset)); // Container width based on the grid.scss setup
+    max-width: var(--max-width);
+    margin: 0 auto;
     position: relative;
-    width: 100%;
-    height: 100vh;
-    background-color: $background-color;
+    z-index: 0;
+
+    .content {
+        grid-column: 1 / 6; // Span from column 1 to column 6
+        max-width: 500px;
+        text-align: left;
+        z-index: 2; // Ensure content is on top of the image
+
+        .content-headertext {
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            color: #E3CDB1;
+        }
+
+        .content-header {
+            font-family: Playfair Display;
+            font-size: 60px;
+            font-weight: 700;
+            line-height: 80px;
+        }
+
+        .content-text {
+            font-family: Poppins;
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 32px;
+            padding: 24px 0px;
+            color: #5E5B69;
+        }
+
+        .see-more-btn {
+            border: 1px solid #E3CDB1;
+            color: #E3CDB1;
+            background-color: #fff;
+            width: 250px;
+            height: 52px;
+            cursor: pointer;
+            font-family: Poppins;
+            font-weight: 500;
+            font-size: 16px;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: #E3CDB1;
+                color: #fff;
+            }
+        }
+    }
+}
+}
+
+
+
+// .image-content {
+
+
+//     height: 100vh;
+
+.hero-section-img {
+
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 0;
+    justify-content: center; // Center horizontally
+    align-items: flex-start; // Align with the top of the container
+    position: absolute;
+    width: 1034px;
+    height: 1336px;
+    top: -20px;
+    left: 698px;
+    gap: 0px;
+    opacity: 1;
+    z-index: 0;
 
-    .container {
-        @include container;
-        display: grid;
-        grid-template-columns: repeat(var(--columns), 1fr); // 12-column grid setup
-        gap: var(--gutter); // Use the same gutter spacing from grid.scss
-        width: calc(100% - 2 * var(--offset)); // Container width based on the grid.scss setup
-        max-width: var(--max-width);
-        margin: 0 auto;
-        position: relative;
-        z-index: 1;
-
-        .content {
-            grid-column: 1 / 6; // Span from column 1 to column 6
-            max-width: 500px;
-            text-align: left;
-            z-index: 2; // Ensure content is on top of the image
-
-            .content-headertext {
-                font-family: Poppins;
-                font-size: 16px;
-                font-weight: 500;
-                line-height: 24px;
-                color: #E3CDB1;
-            }
-
-            .content-header {
-                font-family: Playfair Display;
-                font-size: 60px;
-                font-weight: 700;
-                line-height: 80px;
-            }
-
-            .content-text {
-                font-family: Poppins;
-                font-size: 18px;
-                font-weight: 300;
-                line-height: 32px;
-                padding: 24px 0px;
-                color: #5E5B69;
-            }
-
-            .see-more-btn {
-                border: 1px solid #E3CDB1;
-                color: #E3CDB1;
-                background-color: #fff;
-                width: 250px;
-                height: 52px;
-                cursor: pointer;
-                font-family: Poppins;
-                font-weight: 500;
-                font-size: 16px;
-                transition: background-color 0.3s;
-
-                &:hover {
-                    background-color: #E3CDB1;
-                    color: #fff;
-                }
-            }
-        }
-    }
-
-    .hero-section-img {
-        display: flex;
-        justify-content: center; // Center horizontally
-        align-items: flex-start; // Align with the top of the container
-        position: absolute;
-        width: 1034px;
-        height: 1336px;
-        top: -20px;
-        left: 698px;
-        gap: 0px;
-        opacity: 1;
-        z-index: 0;
-    
-        img {
-            max-width: 100%;
-            height: auto; // Maintain the aspect ratio
-            object-fit: cover;
-            object-position: center;
-            border-radius: 8px;
-            width: 889.76px;
-
-        }
-    }
-
-    .navigation {
-        position: absolute;
-        top: 30px;
-        right: 30px;
-
-        ul {
-            list-style: none;
-            display: flex;
-            gap: 20px;
-
-            li {
-                a {
-                    text-decoration: none;
-                    color: $text-color;
-                    font-size: 16px;
-                    font-weight: 500;
-                    transition: color 0.3s;
-
-                    &:hover {
-                        color: $primary-color;
-                    }
-                }
-            }
-        }
-    }
+    img {
+        background: #00000000;
+        max-width: 100%;
+        height: auto; // Maintain the aspect ratio
+        object-fit: cover;
+        object-position: center;
+        border-radius: 8px;
+        width: 889.76px;
+        // clip-path: inset(0 0 40% 0);
+        
+    // }
+}
 }
 
 @media (max-width: 768px) {
