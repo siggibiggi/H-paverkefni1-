@@ -1,0 +1,123 @@
+body {
+  background-color: #f9f9f9;
+  font-family: Poppins, sans-serif;
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff7f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.header .container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+}
+.header .container .content {
+  max-width: 500px;
+  text-align: left;
+}
+.header .container .content .content-headertext {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: #E3CDB1;
+}
+.header .container .content .content-header {
+  font-family: Playfair Display;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 79.98px;
+  text-align: left;
+}
+.header .container .content .content-text {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
+  text-align: left;
+  padding: 24px 12px;
+  color: #5E5B69;
+}
+.header .container .content .see-more {
+  border: 1px solid #E3CDB1;
+  color: #E3CDB1;
+  background-color: #fff;
+  width: 250px;
+  height: 52px;
+  gap: 0px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  cursor: pointer;
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+.header .container .content .see-more:hover {
+  background-color: #E3CDB1;
+  color: #fff;
+}
+.header .container .hero-section-img {
+  display: flex;
+  justify-content: center;
+  width: 1034px;
+  height: 1336px;
+  top: -20px;
+  left: 698px;
+  gap: 0px;
+  opacity: 0px;
+}
+.header .container .hero-section-img img {
+  max-width: 100%;
+  border-radius: 8px;
+  width: 400px;
+}
+.header .navigation {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+.header .navigation ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.header .navigation ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.header .navigation ul li a:hover {
+  color: #f09a70;
+}
+
+@media (max-width: 768px) {
+  .header .container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .header .container .image {
+    margin-top: 20px;
+  }
+  .header .navigation {
+    top: 10px;
+    right: 10px;
+  }
+}
+
+/*# sourceMappingURL=bgheader.css.map */
