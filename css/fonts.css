@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 80px;
+    /* identical to box height */
+    display: flex;
+    align-items: flex-end;
+    color: #000000;
+    src: url('./fonts/?.ttf') format('?');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/?.ttf') format('?');
+}
