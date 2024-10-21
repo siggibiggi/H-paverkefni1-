@@ -34,24 +34,33 @@ body {
   z-index: 2;
 }
 .header .container .content .content-headertext {
-  font-family: Poppins;
-  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
   font-weight: 500;
+  font-size: 16px;
   line-height: 24px;
+  display: flex;
+  align-items: flex-end;
   color: #E3CDB1;
 }
 .header .container .content .content-header {
-  font-family: Playfair Display;
-  font-size: 60px;
+  font-family: "Playfair Display", sans-serif;
+  font-style: normal;
   font-weight: 700;
+  font-size: 60px;
   line-height: 80px;
+  display: flex;
+  align-items: flex-end;
+  color: #000000;
 }
 .header .container .content .content-text {
-  font-family: Poppins;
-  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
   font-weight: 300;
+  font-size: 18px;
   line-height: 32px;
-  padding: 24px 0px;
+  display: flex;
+  align-items: center;
   color: #5E5B69;
 }
 .header .container .content .see-more-btn {
