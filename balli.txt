@@ -1,0 +1,264 @@
+/* Navigation */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+
+position: absolute;
+width: 1290px;
+height: 33px;
+left: 155px;
+top: 55px;
+
+
+
+/* Navigation */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 933px;
+
+width: 1290px;
+height: 33px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Logotype */
+
+width: 133px;
+height: 25px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Logotype */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+
+
+/* yum&yum */
+
+position: absolute;
+left: 0.3%;
+right: 0.32%;
+top: 25.89%;
+bottom: 0%;
+
+background: #000000;
+
+
+/* Path */
+
+position: absolute;
+left: 0.3%;
+right: 87.91%;
+top: 26.44%;
+bottom: 0%;
+
+background: #DADADA;
+
+
+/* Path */
+
+position: absolute;
+left: 11.6%;
+right: 76.4%;
+top: 26.22%;
+bottom: 21.33%;
+
+background: #DADADA;
+
+
+/* Path */
+
+position: absolute;
+left: 24.18%;
+right: 57.78%;
+top: 25.89%;
+bottom: 22.22%;
+
+background: #DADADA;
+
+
+/* Path */
+
+position: absolute;
+left: 57.76%;
+right: 30.45%;
+top: 26.44%;
+bottom: 0%;
+
+background: #DADADA;
+
+
+/* Path */
+
+position: absolute;
+left: 69.06%;
+right: 18.94%;
+top: 26.22%;
+bottom: 21.33%;
+
+background: #DADADA;
+
+
+/* Path */
+
+position: absolute;
+left: 81.63%;
+right: 0.33%;
+top: 25.89%;
+bottom: 22.22%;
+
+background: #DADADA;
+
+
+/* Group 7 */
+
+position: absolute;
+left: 42.4%;
+right: 41.06%;
+top: 0%;
+bottom: 16%;
+
+
+
+/* Path */
+
+position: absolute;
+left: 2.01%;
+right: 1.6%;
+top: 1.76%;
+bottom: 2.95%;
+
+background: #000000;
+
+
+/* Path */
+
+position: absolute;
+left: 2.01%;
+right: 1.6%;
+top: 1.76%;
+bottom: 2.95%;
+
+background: #DADADA;
+
+
+/* Path */
+
+position: absolute;
+left: 6.28%;
+right: 4.3%;
+top: 6.17%;
+bottom: 7.36%;
+
+background: #DADADA;
+
+
+/* Path */
+
+position: absolute;
+left: 18.54%;
+right: 43.65%;
+top: 45.85%;
+bottom: 11.68%;
+
+background: #000000;
+
+
+/* Path */
+
+position: absolute;
+left: 22.81%;
+right: 47.93%;
+top: 50.44%;
+bottom: 16.09%;
+
+background: #DADADA;
+
+
+/* Path */
+
+position: absolute;
+left: 18.54%;
+right: 43.65%;
+top: 45.85%;
+bottom: 11.68%;
+
+background: #DADADA;
+
+
+/* Path */
+
+position: absolute;
+left: 28.8%;
+right: 46.42%;
+top: 3.88%;
+bottom: 56.24%;
+
+background: #000000;
+
+
+/* Path */
+
+position: absolute;
+left: 33.07%;
+right: 50.7%;
+top: 8.29%;
+bottom: 60.82%;
+
+background: #DADADA;
+
+
+/* Path */
+
+position: absolute;
+left: 28.8%;
+right: 46.42%;
+top: 3.88%;
+bottom: 56.24%;
+
+background: #DADADA;
+
+
+/* Recipes Videos About */
+
+width: 306px;
+height: 33px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 30px;
+display: flex;
+align-items: flex-end;
+
+color: #262626;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;

@@ -2,11 +2,369 @@
     <html>
         <head>
         <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../styles.css">
         </head>
+        <script>
+            function DoCheckUncheckDisplay(d,dchecked,dunchecked)
+            {
+               if( d.checked == true )
+               {
+                  document.getElementById(dchecked).style.display = "block";
+                  document.getElementById(dunchecked).style.display = "none";
+               }
+               else
+               {
+                  document.getElementById(dchecked).style.display = "none";
+                  document.getElementById(dunchecked).style.display = "block";
+               }
+            }
+            </script>
         <body>
-        <footer>
+            <div class="video-list">
+                <div class="recipe-text">
+                    <div>
+                    <p>Get ready to get busy</p>
+                    <h1>All recipes</h1>
+                    </div>
+                    <div class="check">
+                        <div>
+                            <input type="checkbox" onclick="DoCheckUncheckDisplay(this,'checkbox-checked','checkbox-unchecked')" style="margin:0;">
+                            Only show video recipes
+                        </div>
+                    </div>
+                </div>
+                <div id="non-videos">
+                <div class="recipes">
+                    
+                        
+                        <div id="checkbox-unchecked" style="display:block;">
+                            <div class="thumbnails">
+                                <div>
+                                    <div class = "thumbnail">
+                                        <img src="../img/pumpkinpie2.jpg"/>
+                                        <div class = hidden>
+                                            <form action="./recipes/pumpkin-pie.html">
+                                                <button>
+                                                    <img src="../img/pumpkinpie2.jpg"/>
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="thumbnail-text">
+                                        <div>
+                                            <p>September</p>
+                                            <p>Pumpkin pie</p>
+                                            </div>
+                                            <div>
+                                            <a href="./recipes/pumpkin-pie.html">Read more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class = "thumbnail">
+                                        <img src="../img/milkcookies2.jpg"/>
+                                        <div class = hidden>
+                                            <form action="./recipes/milk-cookies.html">
+                                                <button>
+                                                    <img src="../img/milkcookies2.jpg"/>
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="thumbnail-text">
+                                        <div>
+                                            <p>September</p>
+                                            <p>Milk cookies</p>
+                                            </div>
+                                            <div>
+                                            <a href="./recipes/milk-cookies.html">Read more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class = "thumbnail">
+                                        <img src="../img/almond-cookies2.png"/>
+                                        <div class = hidden>
+                                            <form action="./recipes/almond-cookies.html">
+                                                <button>
+                                                    <img src="../img/almond-cookies2.png"/>
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="thumbnail-text">
+                                        <div>
+                                            <p>September</p>
+                                            <p>Almond cookies</p>
+                                            </div>
+                                            <div>
+                                            <a href="./recipes/almond-cookies.html">Read more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="thumbnails">
+                                <div>
+                                    <div class = "thumbnail">
+                                        <img src="../img/bananacake2.png"/>
+                                        <div class = hidden>
+                                            <form action="./recipes/banana-cake.html">
+                                                <button>
+                                                    <img src="../img/bananacake2.png"/>
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="thumbnail-text">
+                                        <div>
+                                            <p>September</p>
+                                            <p>Banana cake</p>
+                                            </div>
+                                            <div>
+                                            <a href="./recipes/banana-cake.html">Read more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class = "thumbnail">
+                                        <img src="../img/laxsalad2.png"/>
+                                        <div class = hidden>
+                                            <form action="./recipes/lax-salad.html">
+                                                <button>
+                                                    <img src="../img/laxsalad2.png"/>
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="thumbnail-text">
+                                        <div>
+                                        <p>September</p>
+                                        <p>Lax Salad</p>
+                                        </div>
+                                        <div>
+                                        <a href="./recipes/lax-salad.html">Read more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class = "thumbnail">
+                                        <img src="../img/cubecake2.png"/>
+                                        <div class = hidden>
+                                            <form action="./recipes/cube-cake.html">
+                                                <button>
+                                                    <img src="../img/cubecake2.png"/>
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="thumbnail-text">
+                                        <div>
+                                            <p>September</p>
+                                            <p>Cube cake</p>
+                                            </div>
+                                            <div>
+                                            <a href="./recipes/cube-cake.html">Read more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        
+                        <div id="checkbox-checked" style="display:none;">
+                        </div>
+                        
+                    
+            </div>
+                <div class="thumbnails">
+                    <div>
+                        <div class = "thumbnail">
+                            <img src="../img/pumpkinpie2.jpg"/>
+                            <div class = hidden>
+                                <form action="">
+                                    <button>
+                                        <img src="../img/orange.jpg"/>
+                                        <div class="play-symbol"></div>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="thumbnail-text">
+                            <div>
+                                <p>September</p>
+                                <p>Pumpkin pie</p>
+                                </div>
+                                <div>
+                                <a href="">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class = "thumbnail">
+                            <img src="../img/milkcookies2.jpg"/>
+                            <div class = hidden>
+                                <form action="">
+                                    <button>
+                                        <img src="../img/orange.jpg"/>
+                                        <div class="play-symbol"></div>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="thumbnail-text">
+                            <div>
+                                <p>September</p>
+                                <p>Milk cookies</p>
+                                </div>
+                                <div>
+                                <a href="">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class = "thumbnail">
+                            <img src="../img/almond-cookies2.png"/>
+                            <div class = hidden>
+                                <form action="">
+                                    <button>
+                                        <img src="../img/orange.jpg"/>
+                                        <div class="play-symbol"></div>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="thumbnail-text">
+                            <div>
+                                <p>September</p>
+                                <p>Almond cookies</p>
+                                </div>
+                                <div>
+                                <a href="">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="thumbnails">
+                    <div>
+                        <div class = "thumbnail">
+                            <img src="../img/bananacake2.png"/>
+                            <div class = hidden>
+                                <form action="">
+                                    <button>
+                                        <img src="../img/orange.jpg"/>
+                                        <div class="play-symbol"></div>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="thumbnail-text">
+                            <div>
+                                <p>September</p>
+                                <p>Banana cake</p>
+                                </div>
+                                <div>
+                                <a href="">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class = "thumbnail">
+                            <img src="../img/laxsalad2.png"/>
+                            <div class = hidden>
+                                <form action="">
+                                    <button>
+                                        <img src="../img/orange.jpg"/>
+                                        <div class="play-symbol"></div>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="thumbnail-text">
+                            <div>
+                            <p>September</p>
+                            <p>Lax Salad</p>
+                            </div>
+                            <div>
+                            <a href="">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class = "thumbnail">
+                            <img src="../img/cubecake2.png"/>
+                            <div class = hidden>
+                                <form action="">
+                                    <button>
+                                        <img src="../img/orange.jpg"/>
+                                        <div class="play-symbol"></div>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="thumbnail-text">
+                            <div>
+                                <p>September</p>
+                                <p>Cube cake</p>
+                                </div>
+                                <div>
+                                <a href="">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="seemore">
+                <hr/>
+                <div class="seemores">
+                    <a href="" class="button">See more</a>
+                </div>
+                <hr/>
+            </div>
+            </div>
+            <footer>
 
-        </footer>
+                <div class="black">
+                    <div>
+                        <div class="craving">
+                            <p>Craving more?</p>
+                            <h2>Subscribe to our newsletter</h2>
+                        </div>
+                        <div class="email">
+                            <p>email</p>
+                            <input id="email" name="email" type="email" required placeholder="email@example.com">       
+                        </div>
+                        <div class="Subscribe">
+                            <a href="" class="button">Subscribe now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="white">
+                    <div>
+                        <dl>
+                            <dd>Come join us for more recipes</dd>
+                            <dd>
+                                <form action="../img/https://www.facebook.com/">
+                                    <button>
+                                        <img src="../img/Facebook-Icon.png"/>
+                                    </button>
+                                </form>
+                                <form action="https://x.com/">
+                                    <button>
+                                        <img src="../img/Twitter-Icon.png"/>
+                                    </button>
+                                </form>
+                                <form action="https://www.YouTube.com/">
+                                    <button>
+                                        <img src="../img/YouTube-Icon.png"/>
+                                    </button>
+                                </form>
+                            </dd>
+                            <dd>yamyam.com</dd>
+                        </dl>
+                    </div>
+                </div>
+            </footer>
         </body>
         
     </html>
