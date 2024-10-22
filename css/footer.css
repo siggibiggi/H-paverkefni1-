@@ -10,13 +10,31 @@ footer > .black {
   background-color: rgb(0, 0, 0);
 }
 
+@media (min-width: 605px) {
+  footer > .black > div {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+@media (max-width: 604px) {
+  footer > .black > div > * {
+    width: 100%;
+    padding-top: 7%;
+  }
+  footer > .black > div {
+    text-align: center;
+  }
+  footer > .black > div .craving p, h2 {
+    text-align: center;
+  }
+}
 footer > .black > div {
   height: 100%;
-  display: flex;
+  align-items: center;
   padding-left: 10%;
   padding-right: 10%;
-  justify-content: space-between;
-  align-items: center;
 }
 
 footer > .black > div > .craving > p {
