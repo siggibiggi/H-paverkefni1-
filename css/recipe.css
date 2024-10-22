@@ -1,0 +1,56 @@
+.rrecipe {
+  margin-bottom: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+@media (min-width: 605px) {
+  .rrecipe {
+    display: grid;
+    grid-template-columns: repeat(var(--columns), 1fr);
+    gap: var(--gutter);
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+  }
+}
+.rrecipe .ingredients {
+  grid-column: span 4;
+}
+
+.rrecipe .ingredients p {
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.rrecipe .ingredients th {
+  padding-bottom: 10px;
+}
+
+.rrecipe .ingredients tr th:nth-child(1) {
+  padding-right: 25px;
+  padding-left: 10px;
+  color: rgb(245, 209, 136);
+  font-size: 20px;
+}
+
+.rrecipe .ingredients tr th:nth-child(2) {
+  color: rgb(176, 176, 176);
+  font-size: 15px;
+  text-align: left;
+}
+
+.rrecipe .method {
+  grid-column: span 8;
+}
+
+.rrecipe h1 {
+  color: rgb(176, 176, 176);
+  margin-bottom: 25px;
+}
+
+.rrecipe .method p {
+  margin-top: 10px;
+}
+
+/*# sourceMappingURL=recipe.css.map */

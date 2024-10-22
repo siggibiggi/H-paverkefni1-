@@ -13,18 +13,42 @@
     color: rgb(176, 176, 176);
 }
 
+@media (max-width: 604px) {
+    .check-video > .check-video-text > h1 {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 422px) {
+    .check-video > .check-video-text > h1 {
+        font-size: 20px;
+    }
+}
+
 .check-video > p {
     color: rgb(243, 204, 131);
 }
 
-.thumbnails {
-    display: flex;
-    gap: 3.75%;
+@media (min-width: 605px) {
+    .thumbnails {
+        display: flex;
+        gap: 3.75%;
+    }
+
+    .thumbnails > div {
+        width: 33.3%;
+    }
 }
 
-.thumbnails > div {
-    width: 33.3%;
+@media (max-width: 604px) {
+    .thumbnails > div {
+        width: 100%;
+    }
 }
+
+
+
+
 
 .thumbnail {
     display: grid;
@@ -102,6 +126,10 @@
     right: 16px;
     color: rgb(243, 204, 131);
     text-decoration: none;
+}
+
+.thumbnail-text > div:nth-child(2) {
+    text-align: right;
 }
 
 hr {
