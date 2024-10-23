@@ -91,6 +91,7 @@ footer > .black > div > .email > input::placeholder {
 footer > .white {
   width: 100%;
   height: 300px;
+  background-color: white;
 }
 
 footer > .white > div {
