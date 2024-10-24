@@ -1,129 +1,147 @@
 <!DOCTYPE html>
-    <html>
-        <head>
-        <title></title>
+<html>
+    <head>
+        <title>yum&yum</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./styles.css">
-        </head>
 
-        <body>
+        <style>
+            /* Hamburger menu styles */
+            
+        </style>
+    </head>
 
-            <header class="header">
-                <nav class="navigation">
-                    <div class="logo">
-                        yum&yum
-                    </div>
+    <body>
+
+        <header class="header">
+            <nav class="navigation">
+                <div class="logo">
+                    <img src="./img/Logotype.png" alt="Logo" />
+                </div>
+        
+                <!-- Navigation Links -->
+                <div class="nav-links">
                     <ul>
                         <li><a href="./sites/Recipes.html">Recipes</a></li>
                         <li><a href="#">Videos</a></li>
                         <li><a href="#">About us</a></li>
                     </ul>
-                </nav>
-            </header>
-            <div class="hero-section">
-                <div class="container">
-                    <div class="content">
-                        <h4 class="content-headertext">Our latest recipe</h4>
-                        <h1 class="content-header">Pumpkin pie</h1>
-                        <p class="content-text">Pumpkin pie is a sweet dessert pie with a spiced, pumpkin-based custard filling. The pumpkin is a symbol of harvest time, and pumpkin pie is often eaten during the fall and early winter.</p>
-                        <button class="see-more-btn">See more</button>
-                    </div>
-    
                 </div>
-                <div class="image-content">
+        
+                <!-- Hamburger Menu -->
+                <div class="container" onclick="toggleMenu()">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </nav>
+        </header>
+        
+
+        <div class="hero-section">
+            <div class="container">
+                <div class="content">
+                    <h4 class="content-headertext">Our latest recipe</h4>
+                    <h1 class="content-header">Pumpkin pie</h1>
+                    <p class="content-text">Pumpkin pie is a sweet dessert pie with a spiced, pumpkin-based custard filling. The pumpkin is a symbol of harvest time, and pumpkin pie is often eaten during the fall and early winter.</p>
+                    <button class="see-more-btn">See more</button>
+                </div>
+            </div>
+            <div class="image-content">
                 <div class="hero-section-img">
                     <img src="./img/cake.png" alt="Pumpkin Pie"/>
                 </div>
             </div>
         </div>
-            <div class="check-video">
-                <p>Want some action?</p>
-                <div class="check-video-text">
-                    <h1>
-                        Check out our
-                    </h1>
-                    <h1>
-                        video recipes
-                    </h1>
-                </div>
-                <div class="thumbnails">
-                    <div>
-                        <div class = "thumbnail">
-                            <img src="./img/legumes.png"/>
-                            <div class = hidden>
-                                <form action="https://www.YouTube.com/">
-                                    <button>
-                                        <img src="./img/orange.jpg"/>
-                                        <div class="play-symbol"></div>
-                                    </button>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="thumbnail-text">
-                            <div>
-                                <p>August 2016</p>
-                                <p>Blossoming cookie</p>
-                                </div>
-                                <div>
-                                <a href="">See</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class = "thumbnail">
-                            <img src="./img/almond-cookies2.png"/>
-                            <div class = hidden>
-                                <form action="https://www.YouTube.com/">
-                                    <button>
-                                        <img src="./img/orange.jpg"/>
-                                        <div class="play-symbol"></div>
-                                    </button>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="thumbnail-text">
-                            <div>
-                                <p>August 2016</p>
-                                <p>Blossoming cookie</p>
-                                </div>
-                                <div>
-                                <a href="">See</a>
-                                </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class = "thumbnail">
-                            <img src="./img/questches-pie.png"/>
-                            <div class = hidden>
-                                <form action="https://www.YouTube.com/">
-                                    <button>
-                                        <img src="./img/orange.jpg"/>
-                                        <div class="play-symbol"></div>
-                                    </button>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="thumbnail-text">
-                            <div>
-                                <p>August 2016</p>
-                                <p>Blossoming cookie</p>
-                                </div>
-                                <div>
-                                <a href="">See</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                    <div class="seemore">
-                        <hr/>
-                        <div class="seemores">
-                            <a href="" class="button">See more</a>
-                        </div>
-                        <hr/>
-                    </div>
-            </div>
-        <footer>
 
+        <div class="check-video">
+            <p>Want some action?</p>
+            <div class="check-video-text">
+                <h1>
+                    Check out our
+                </h1>
+                <h1>
+                    video recipes
+                </h1>
+            </div>
+            <div class="thumbnails">
+                <div>
+                    <div class="thumbnail">
+                        <img src="./img/legumes.png"/>
+                        <div class="hidden">
+                            <form action="https://www.YouTube.com/">
+                                <button>
+                                    <img src="./img/orange.jpg"/>
+                                    <div class="play-symbol"></div>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="thumbnail-text">
+                        <div>
+                            <p>August 2016</p>
+                            <p>Blossoming cookie</p>
+                        </div>
+                        <div>
+                            <a href="">See</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="thumbnail">
+                        <img src="./img/almond-cookies2.png"/>
+                        <div class="hidden">
+                            <form action="https://www.YouTube.com/">
+                                <button>
+                                    <img src="./img/orange.jpg"/>
+                                    <div class="play-symbol"></div>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="thumbnail-text">
+                        <div>
+                            <p>August 2016</p>
+                            <p>Blossoming cookie</p>
+                        </div>
+                        <div>
+                            <a href="">See</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="thumbnail">
+                        <img src="./img/questches-pie.png"/>
+                        <div class="hidden">
+                            <form action="https://www.YouTube.com/">
+                                <button>
+                                    <img src="./img/orange.jpg"/>
+                                    <div class="play-symbol"></div>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="thumbnail-text">
+                        <div>
+                            <p>August 2016</p>
+                            <p>Blossoming cookie</p>
+                        </div>
+                        <div>
+                            <a href="">See</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="seemore">
+                <hr/>
+                <div class="seemores">
+                    <a href="" class="button">See more</a>
+                </div>
+                <hr/>
+            </div>
+        </div>
+
+        <footer>
             <div class="black">
                 <div>
                     <div class="craving">
@@ -165,6 +183,24 @@
                 </div>
             </div>
         </footer>
-        </body>
-        
-    </html>
+
+        <!-- JavaScript for Hamburger Menu -->
+        <script>
+            function toggleMenu() {
+                var x = document.querySelector('.navigation ul');
+                var menuIcon = document.querySelector('.container');
+                
+                // Toggle navigation visibility
+                if (x.classList.contains('show-nav')) {
+                    x.classList.remove('show-nav');
+                } else {
+                    x.classList.add('show-nav');
+                }
+
+                // Toggle hamburger icon animation
+                menuIcon.classList.toggle('change');
+            }
+        </script>
+
+    </body>
+</html>
