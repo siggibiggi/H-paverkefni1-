@@ -4,8 +4,32 @@
         <title></title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../../styles.css">
+        <script src="../../myscripts.js"></script>
         </head>
         <body>
+            <header class="header">
+                <nav class="navigation">
+                    <div class="logo">
+                        <img src="../../img/Logotype.png" alt="Logo" />
+                    </div>
+            
+                    <!-- Navigation Links -->
+                    <div class="nav-links">
+                        <ul>
+                            <li><a href="../Recipes.html">Recipes</a></li>
+                            <li><a href="../Recipes.html">Videos</a></li>
+                            <li><a href="#siggi">About us</a></li>
+                        </ul>
+                    </div>
+            
+                    <!-- Hamburger Menu -->
+                    <div class="hamburger-menu container" onclick="toggleMenu()">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </nav>
+            </header>
             <div class="videopic">
                 <img class="background" src="../../img/cubecake2.png"/>
                 <img class="playbutton" src="../../img/playbutton.png">
@@ -188,7 +212,7 @@
                 <hr/>
             </div>
             </div>
-            <footer>
+            <footer id="siggi">
                 <div class="black">
                     <div>
                         <div class="craving">

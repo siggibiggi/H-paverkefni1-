@@ -14,17 +14,12 @@ body {
 }
 
 .header {
-  width: 100%;
+  max-width: 100%;
   height: 10vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-left: 10%;
-  padding-right: 10%;
-  margin: 0;
   top: 0;
-  left: 0;
-  right: 0;
   background-color: white;
   position: fixed;
   z-index: 1000;
@@ -34,27 +29,23 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-}
-.header .navigation nav a {
-  max-width: 100px; /* Prevent overflow */
-  text-overflow: ellipsis; /* Add ellipsis for overflowed text */
-  overflow: hidden; /* Hide overflowed text */
-  white-space: nowrap; /* Prevent wrapping */
+  padding-left: 10%;
+  padding-right: 10%;
 }
 .header .navigation .logo {
-  font-family: "Playfair Display", serif;
-  font-size: 25px;
-  font-weight: bold;
-  color: #333;
   opacity: 1;
 }
-.header .navigation ul {
+.header .navigation .nav-links {
+  padding-left: 50%;
+}
+.header .navigation .nav-links ul {
   list-style: none;
   display: flex;
   gap: 20px;
   opacity: 1;
+  justify-content: space-between;
 }
-.header .navigation ul li a {
+.header .navigation .nav-links ul li a {
   text-decoration: none;
   color: #333;
   font-size: 16px;
@@ -62,7 +53,7 @@ body {
   transition: color 0.3s;
   opacity: 1;
 }
-.header .navigation ul li a:hover {
+.header .navigation .nav-links ul li a:hover {
   color: #f09a70;
 }
 

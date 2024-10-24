@@ -4,13 +4,7 @@
         <title>yum&yum</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./styles.css">
-
-        <style>
-            /* Hamburger menu styles */
-            
-        </style>
-    </head>
-
+        <script src="myscripts.js"></script>
     <body>
 
         <header class="header">
@@ -202,8 +196,22 @@
                     <hr/>
                 </div>
         </div>
-        <div id="siggi"></div>
-
+        <div class="magazine-section">
+            <div class="background"></div>
+            
+            <div class="magazine-text">
+                <p class="announcement-time">Announcement time</p>
+                <h1 class="title">Our book is out</h1>
+                <p class="description">
+                    Pumpkin pie is a sweet dessert pie with a spiced, pumpkin-based custard filling. The pumpkin is a symbol of harvest time, and pumpkin pie is often eaten during the fall and early winter.
+                </p>
+                <button class="see-more-btn">See more</button>
+            </div>
+            
+            <div class="magazine">
+                <img src="./img/magazinebook.png" alt="Yam book" class="magazine-image">
+            </div>
+        </div>
         
         
 
@@ -294,7 +302,7 @@
             </div>
         </div>
 
-        <footer>
+        <footer id="siggi">
             <div class="black">
                 <div>
                     <div class="craving">
@@ -336,24 +344,6 @@
                 </div>
             </div>
         </footer>
-
-        <!-- JavaScript for Hamburger Menu -->
-        <script>
-            function toggleMenu() {
-                var x = document.querySelector('.navigation ul');
-                var menuIcon = document.querySelector('.container');
-                
-                // Toggle navigation visibility
-                if (x.classList.contains('show-nav')) {
-                    x.classList.remove('show-nav');
-                } else {
-                    x.classList.add('show-nav');
-                }
-
-                // Toggle hamburger icon animation
-                menuIcon.classList.toggle('change');
-            }
-        </script>
 
     </body>
 </html>
