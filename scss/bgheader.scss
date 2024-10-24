@@ -103,7 +103,7 @@ justify-content: center;
         z-index: 2; // Ensure content is on top of the image
 
         .content-headertext {
-            font-family: Poppins;
+            font-family: 'Poppins';
             font-size: 16px;
             font-weight: 500;
             line-height: 24px;
@@ -118,7 +118,7 @@ justify-content: center;
         }
 
         .content-text {
-            font-family: Poppins;
+            font-family: 'Poppins';
             font-size: 18px;
             font-weight: 300;
             line-height: 32px;
@@ -126,17 +126,17 @@ justify-content: center;
             color: #5E5B69;
         }
 
-        .see-more-btn {
-            border: 1px solid #E3CDB1;
-            color: #E3CDB1;
-            background-color: #fff;
-            width: 250px;
-            height: 52px;
-            cursor: pointer;
-            font-family: Poppins;
-            font-weight: 500;
-            font-size: 16px;
-            transition: background-color 0.3s;
+            .see-more-btn {
+                border: 1px solid #E3CDB1;
+                color: #E3CDB1;
+                background-color: #fff;
+                width: 250px;
+                height: 52px;
+                cursor: pointer;
+                font-family: 'Poppins';
+                font-weight: 500;
+                font-size: 16px;
+                transition: background-color 0.3s;
 
             &:hover {
                 background-color: #E3CDB1;
