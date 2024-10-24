@@ -1,0 +1,89 @@
+.magazine-section {
+    position: relative;
+    width: 1600px;
+    height: 766px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1600px;
+        height: 670px;
+        background-color: #F7F1EB; // Adjust as necessary
+        z-index: -1;
+    }
+
+    .magazine-text {
+        width: 552px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+        margin-right: 40px;
+
+        .announcement-time {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #E3CDB1;
+            margin-bottom: 8px; // Adjust space between text elements
+        }
+        
+        .title {
+            font-family: 'Playfair Display';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 64px;
+            color: #000000;
+            margin-bottom: 16px; // Space between title and description
+        }
+
+        .description {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
+            color: #5E5B69;
+            margin-bottom: 24px; // Space between description and button
+        }
+
+        .see-more-btn {
+            border: 1px solid #E3CDB1;
+            color: #E3CDB1;
+            background-color: #fff;
+            width: 250px;
+            height: 52px;
+            cursor: pointer;
+            font-family: 'Poppins';
+            font-weight: 500;
+            font-size: 16px;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: #E3CDB1;
+                color: #fff;
+            }
+        }
+    }
+
+    .magazine {
+        width: 471px;
+        height: 626px;
+        position: relative;
+        margin-left: 40px;
+
+        .magazine-image {
+            width: 100%;
+            height: auto;
+            box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.05); // Adjust drop shadow as needed
+        }
+    }
+}

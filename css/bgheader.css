@@ -123,7 +123,7 @@ body {
   height: 766px;
   margin: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 .magazine-section .background {
@@ -140,6 +140,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: left;
+  margin-right: 40px;
 }
 .magazine-section .magazine-text .announcement-time {
   font-family: "Poppins";
@@ -188,6 +190,7 @@ body {
   width: 471px;
   height: 626px;
   position: relative;
+  margin-left: 40px;
 }
 .magazine-section .magazine .magazine-image {
   width: 100%;

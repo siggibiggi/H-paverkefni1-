@@ -22,9 +22,7 @@ footer > .black {
 }
 
 @media (max-width: 604px) {
-    footer > .black > div {
-    }
-
+  
     footer > .black > div > * {
         width: 100%;
         padding-top: 7%;
@@ -47,6 +45,46 @@ footer > .black > div {
 }
 
 
+footer > .black > div .craving > h2 {
+    font-family: 'Playfair Display';
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 53.32px;
+    text-align: left;
+}
+
+footer > .black > div .craving > p {
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    color: #E3CDB1;
+}
+
+footer > .black > div > .email > input {
+    font-family: 'Playfair Display';
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 29.33px;
+    text-align: left;
+}
+
+footer > .black > div > .email > p {
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    text-align: left;
+}
+
+footer > .black > div > .subscribe {
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+}
 
 footer > .black > div > .craving > p {
     color: rgb(243, 204, 131);
@@ -89,6 +127,11 @@ footer a {
 footer > .black > div > .subscribe {
     padding-left: 20px;
     padding-right: 20px;
+
+    width: 250px;
+    height: 52px;
+    gap: 0px;
+    opacity: 0px;
 }
 
 footer > .black > div > .email {
@@ -115,10 +158,21 @@ footer > .white > div {
 footer > .white > div > dl {
     text-align: center;
     width: 50%;
+
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 17px;
 }
 
 footer > .white > div > dl > dd:nth-child(3) {
-    color: rgb(204, 204, 206);
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 21px;
+    letter-spacing: -0.291666716337204px;
+    
+    color: #D0D0D0;
 }
 
 footer > .white > div > dl > dd:nth-child(2) {
