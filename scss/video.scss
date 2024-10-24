@@ -1,0 +1,92 @@
+.videopic {
+    max-width: 100%;
+    height: calc(50vh);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.videopic .background {
+    width: 3000px;
+    position: absolute;
+}
+
+.videopic .playbutton {
+    position: absolute;
+    width: 10%;
+    left: 66%;
+}
+
+.videopic .black-text {
+    position: absolute;
+    width: 30%;
+    height: 60%;
+    left: 0;
+    padding-left: 10%;
+}
+
+.videopic .black-text * {
+    color: white;
+}
+
+.videopic > div {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.videopic .black-squares {
+    display: inline-flex;
+}
+
+.videopic .black-square1 {
+    height: 100%;
+    width: 40%;
+    background-color: black;
+    margin-right: -4px;
+}
+
+.videopic .black-square2 {
+    height: 100%;
+    width: 20%;
+    background-image: linear-gradient(to left, rgba(255,0,0,0), rgb(0, 0, 0));
+}
+
+.videopic .infoicons > div {
+    display: flex;
+    gap: 10%;
+}
+
+.videopic .infoicons > div p { 
+    height: 50%;
+}
+
+.videopic .black-text > p {
+    color: gray;
+    line-height: 25px;
+    height: 50%;
+}
+
+.videopic .infoicons img {
+    width: 20px;
+}
+
+@media (min-width:774px) {
+    .videopic .infoicons {
+        margin-top: 10px ;
+        margin-bottom: 10px ;
+        display: flex;
+    }
+}
+
+@media (max-width:773px) {
+        .videopic .black-text > p {
+            display: none;
+        }
+
+        .videopic .infoicons > div {
+            margin-top: 20px;
+        }
+}

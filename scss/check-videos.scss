@@ -66,6 +66,10 @@
 	width: 100%;
 }
 
+.thumbnails > div {
+    background-color: white;
+    margin-top: 20px;
+}
 
 
 .play-symbol {
@@ -182,4 +186,13 @@ hr {
 
 .seemore .seemores {
     margin-top:1%;
+}
+
+.latest {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+body {
+    background-color: #FAFAFA;
 }
