@@ -49,10 +49,6 @@ body {
 
 
     .navigation {
-        display: flex;
-        justify-content: space-between; 
-        align-items: center;
-        width: 100%;
       
         nav a {
             max-width: 100px; /* Prevent overflow */
