@@ -4,13 +4,7 @@
         <title>yum&yum</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./styles.css">
-
-        <style>
-            /* Hamburger menu styles */
-            
-        </style>
-    </head>
-
+        <script src="myscripts.js"></script>
     <body>
 
         <header class="header">
@@ -23,13 +17,13 @@
                 <div class="nav-links">
                     <ul>
                         <li><a href="./sites/Recipes.html">Recipes</a></li>
-                        <li><a href="#">Videos</a></li>
-                        <li><a href="#">About us</a></li>
+                        <li><a href="./sites/Recipes.html">Videos</a></li>
+                        <li><a href="#siggi">About us</a></li>
                     </ul>
                 </div>
         
                 <!-- Hamburger Menu -->
-                <div class="container" onclick="toggleMenu()">
+                <div class="hamburger-menu container" onclick="toggleMenu()">
                     <div class="bar1"></div>
                     <div class="bar2"></div>
                     <div class="bar3"></div>
@@ -46,8 +40,8 @@
                     <p class="content-text">Pumpkin pie is a sweet dessert pie with a spiced, pumpkin-based custard filling. The pumpkin is a symbol of harvest time, and pumpkin pie is often eaten during the fall and early winter.</p>
                     <button class="see-more-btn">See more</button>
                 </div>
-            </div>
-            <div class="image-content">
+             </div>
+             <div class="image-content">
                 <div class="hero-section-img">
                     <img src="./img/cake.png" alt="Pumpkin Pie"/>
                 </div>
@@ -65,91 +59,143 @@
                 </h1>
             </div>
             <div class="thumbnails">
-                <!-- First row -->
                 <div>
-                    <div class="thumbnail">
-                        <img src="./img/lax-sushi-rolls.png" />
-                    </div>
-                    <div class="thumbnail-text">
-                        <div>
-                            <p>September</p>
-                            <p>Lax sushi rolls</p>
+                    <div class = "thumbnail">
+                        <img src="./img/milkcookies2.jpg"/>
+                        <div class = hidden>
+                            <form action="./sites/recipes/milk-cookies.html">
+                                <button>
+                                    <img src="./img/milkcookies2.jpg"/>
+                                </button>
+                            </form>
                         </div>
-                        <div><a href="">Read more</a></div>
-                    </div>
-                </div>
-                <div>
-                    <div class="thumbnail">
-                        <img src="./img/milkcookies.png" />
                     </div>
                     <div class="thumbnail-text">
                         <div>
                             <p>September</p>
                             <p>Milk cookies</p>
+                            </div>
+                            <div>
+                            <a href="./sites/recipes/milk-cookies.html">Read more</a>
                         </div>
-                        <div><a href="">Read more</a></div>
                     </div>
                 </div>
                 <div>
-                    <div class="thumbnail">
-                        <img src="./img/banana-cake.png" />
-                    </div>
-                    <div class="thumbnail-text">
-                        <div>
-                            <p>September</p>
-                            <p>Banana cake</p>
+                    <div class = "thumbnail">
+                        <img src="./img/cubecake2.png"/>
+                        <div class = hidden>
+                            <form action="./sites/recipes/cube-cake.html">
+                                <button>
+                                    <img src="./img/cubecake2.png"/>
+                                </button>
+                            </form>
                         </div>
-                        <div><a href="">Read more</a></div>
-                    </div>
-                </div>
-        
-                <!-- Second row -->
-                <div>
-                    <div class="thumbnail">
-                        <img src="./img/cube-cake.png" />
                     </div>
                     <div class="thumbnail-text">
                         <div>
                             <p>September</p>
                             <p>Cube cake</p>
-                        </div>
-                        <div><a href="">Read more</a></div>
+                            </div>
+                            <div>
+                            <a href="./sites/recipes/cube-cake.htm">Read more</a>
+                            </div>
                     </div>
                 </div>
                 <div>
-                    <div class="thumbnail">
-                        <img src="./img/lax-sushi-rolls.png" />
-                    </div>
-                    <div class="thumbnail-text">
-                        <div>
-                            <p>September</p>
-                            <p>Lax sushi rolls</p>
+                    <div class = "thumbnail">
+                        <img src="./img/almond-cookies2.png"/>
+                        <div class = hidden>
+                            <form action="./sites/recipes/almond-cookies.html">
+                                <button>
+                                    <img src="./img/almond-cookies2.png"/>
+                                </button>
+                            </form>
                         </div>
-                        <div><a href="">Read more</a></div>
-                    </div>
-                </div>
-                <div>
-                    <div class="thumbnail">
-                        <img src="./img/almond-cookies.png" />
                     </div>
                     <div class="thumbnail-text">
                         <div>
                             <p>September</p>
                             <p>Almond cookies</p>
+                            </div>
+                            <div>
+                            <a href="./sites/recipes/almond-cookies.html">Read more</a>
                         </div>
-                        <div><a href="">Read more</a></div>
                     </div>
                 </div>
             </div>
-            <div class="seemore">
-                <hr/>
-                <div class="seemores">
-                    <a href="" class="button">See more</a>
+            <div class="thumbnails">
+                <div>
+                    <div class = "thumbnail">
+                        <img src="./img/bananacake2.png"/>
+                        <div class = hidden>
+                            <form action="./sites/recipes/banana-cake.html">
+                                <button>
+                                    <img src="./img/bananacake2.png"/>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="thumbnail-text">
+                        <div>
+                            <p>September</p>
+                            <p>Banana cake</p>
+                            </div>
+                            <div>
+                            <a href="./sites/recipes/banana-cake.html">Read more</a>
+                        </div>
+                    </div>
                 </div>
-                <hr/>
+                <div>
+                    <div class = "thumbnail">
+                        <img src="./img/laxsalad2.png"/>
+                        <div class = hidden>
+                            <form action="./sites/recipes/lax-salad.html">
+                                <button>
+                                    <img src="./img/laxsalad2.png"/>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="thumbnail-text">
+                        <div>
+                            <p>September</p>
+                            <p>Lax salad</p>
+                            </div>
+                            <div>
+                            <a href="./sites/recipes/lax-salad.html">Read more</a>
+                            </div>
+                    </div>
+                </div>
+                <div>
+                    <div class = "thumbnail">
+                        <img src="./img/pumpkinpie2.jpg"/>
+                        <div class = hidden>
+                            <form action="./sites/recipes/pumpkin-pie.html">
+                                <button>
+                                    <img src="./img/pumpkinpie2.jpg"/>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="thumbnail-text">
+                        <div>
+                            <p>September</p>
+                            <p>Pumpkin pie</p>
+                            </div>
+                            <div>
+                            <a href="./sites/recipes/pumpkin-pie.html">Read more</a>
+                        </div>
+                    </div>
+                </div>
             </div>
+                <div class="seemore">
+                    <hr/>
+                    <div class="seemores">
+                        <a href="./sites/Recipes.html" class="button">See more</a>
+                    </div>
+                    <hr/>
+                </div>
         </div>
-        
 
         <div class="magazine-section">
             <div class="background"></div>
@@ -167,6 +213,7 @@
                 <img src="./img/magazinebook.png" alt="Yam book" class="magazine-image">
             </div>
         </div>
+        
         
 
         <div class="check-video">
@@ -256,7 +303,7 @@
             </div>
         </div>
 
-        <footer>
+        <footer id="siggi">
             <div class="black">
                 <div>
                     <div class="craving">
@@ -298,24 +345,6 @@
                 </div>
             </div>
         </footer>
-
-        <!-- JavaScript for Hamburger Menu -->
-        <script>
-            function toggleMenu() {
-                var x = document.querySelector('.navigation ul');
-                var menuIcon = document.querySelector('.container');
-                
-                // Toggle navigation visibility
-                if (x.classList.contains('show-nav')) {
-                    x.classList.remove('show-nav');
-                } else {
-                    x.classList.add('show-nav');
-                }
-
-                // Toggle hamburger icon animation
-                menuIcon.classList.toggle('change');
-            }
-        </script>
 
     </body>
 </html>
