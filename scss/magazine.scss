@@ -13,7 +13,7 @@
         left: 0;
         width: 1600px;
         height: 670px;
-        background-color: #F7F1EB; // Adjust as necessary
+        background-color: #F7F1EB;
         z-index: -1;
     }
 
@@ -32,7 +32,7 @@
             font-size: 16px;
             line-height: 24px;
             color: #E3CDB1;
-            margin-bottom: 8px; // Adjust space between text elements
+            margin-bottom: 8px;
         }
         
         .title {
@@ -42,7 +42,7 @@
             font-size: 48px;
             line-height: 64px;
             color: #000000;
-            margin-bottom: 16px; // Space between title and description
+            margin-bottom: 16px;
         }
 
         .description {
@@ -52,7 +52,7 @@
             font-size: 18px;
             line-height: 28px;
             color: #5E5B69;
-            margin-bottom: 24px; // Space between description and button
+            margin-bottom: 24px;
         }
 
         .see-more-btn {
@@ -83,7 +83,7 @@
         .magazine-image {
             width: 100%;
             height: auto;
-            box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.05); // Adjust drop shadow as needed
+            box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.05);
         }
     }
 }
